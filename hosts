@@ -9,7 +9,3 @@ GNU nano 2.0.6              File: /etc/hosts
 127.0.0.1                               localhost
 255.255.255.255                         broadcasthost
 ::1                                                    localhost
-127.0.0.1 www.facebook.com
-127.0.0.1 facebook.com
-127.0.0.1 www.reddit.com
-127.0.0.1 reddit.com
