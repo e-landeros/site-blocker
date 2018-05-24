@@ -3,7 +3,9 @@ from datetime import datetime as dt
 
 """
 Modify hosts file on computer to block access to specific ip addresses within a
-time frame eg.8-5pm
+time frame eg.8-5pm, add websites to website_list below.
+note: scheduling the program in linux mac use Cron
+
 """
 #hosts_temp ="hosts"
 hosts_path ="/etc/hosts"
@@ -11,7 +13,7 @@ redirect="127.0.0.1"
 website_list=['www.facebook.com','facebook.com','www.reddit.com','reddit.com']
 
 while True:
-    if dt(dt.now().year, dt.now().month, dt.now().day,18)<dt.now()<dt(dt.now().year,dt.now().month,dt.now().day,19):
+    if dt(dt.now().year, dt.now().month, dt.now().day,8)<dt.now()<dt(dt.now().year,dt.now().month,dt.now().day,19):
         print("Working Hours...")
         #read and write to hosts file w create new empty file so use r+ to read and write
         with open(hosts_path, 'r+') as file:
